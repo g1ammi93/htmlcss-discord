@@ -56,6 +56,11 @@ i {
     margin: 0 200px;
 }
 
+button,
+a {
+    cursor: pointer;
+}
+
 /* Utility */
 
 .nav-box,
@@ -65,14 +70,14 @@ i {
     width: 1080px;
 }
 
-.primary-container,
+/* .primary-container,
 .secondary-container,
 .download-container,
 .primary-footer-container,
-/* .jumbotron, */
+.jumbotron
 .secondary-footer-container {
     border: var(--border2);
-}
+}*/
 
 .primary-container,
 .secondary-container,
@@ -133,6 +138,7 @@ header {
 
 .radius {
     border-radius: 30px;
+    border: none;
 }
 
 .login {
@@ -214,18 +220,18 @@ footer>div {
 }
 
 .primary-footer-container {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     flex-basis: calc(100% / 4 * 3);
     display: flex;
 }
 
 .secondary-footer-container {
-    background-color: palevioletred;
+    /* background-color: palevioletred; */
     flex-basis: calc(100% / 4);
 }
 
 .col-footer {
-    border: var(--border);
+    /* border: var(--border); */
     width: 25%;
     min-height: 100%;
     display: inline-block;
@@ -236,33 +242,34 @@ footer>div {
 }
 
 .button-container {
-    border: var(--border);
+    /* border: var(--border); */
     height: 40px;
     justify-content: space-between;
-    background-color: rgb(0, 255, 200);
+    /* background-color: rgb(0, 255, 200); */
+    border-top: 1px solid white;
 }
 
 .last-container {
-    margin: 1px 0;
+    /* margin: 1px 0; */
 }
 
 .tertiary-footer-container {
     display: flex;
     min-height: 30px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .logo-footer,
 button {
-    border: var(--border);
+    /* border: var(--border); */
     width: 5%;
     min-height: 60%;
     display: inline-block;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 button {
-    cursor: pointer;
     min-width: 60px;
     min-height: 25px;
     background-color: white;
@@ -312,4 +319,19 @@ h5 {
 .abottom {
     margin: 5px;
     font-size: 15px;
+}
+
+select {
+    margin-bottom: 15px;
+}
+
+.social {
+    margin: 0;
+}
+
+.finalbutton {
+    width: 80px;
+    text-align: center;
+    color: white;
+    background-color: rgb(121, 131, 245);
 }
