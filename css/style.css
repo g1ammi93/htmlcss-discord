@@ -32,6 +32,12 @@ h2 {
 
 h3 {
     font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -44,6 +50,10 @@ button {
 
 i {
     margin-right: 10px;
+}
+
+.margin200 {
+    margin: 0 200px;
 }
 
 /* Utility */
@@ -189,7 +199,7 @@ main {
 }
 
 .download-container {
-    background-color: green;
+    /* background-color: green; */
     flex-basis: 100%;
     min-height: 800px;
     display: flex;
@@ -255,4 +265,26 @@ button {
     min-width: 60px;
     min-height: 25px;
     background-color: white;
+}
+
+.measures {
+    width: 230px;
+    height: 40px;
+    margin: 0 90px;
+    padding: 5px 15px;
+    background-color: rgb(121, 131, 245);
+    color: white;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.bkgstar {
+    display: inline;
+    background-image: url(../img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50px;
 }
