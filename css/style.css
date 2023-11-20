@@ -36,7 +36,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 26px;
     margin-bottom: 15px;
 }
 
@@ -74,12 +74,9 @@ i {
     border: var(--border2);
 }
 
-.general-container,
 .primary-container,
 .secondary-container,
-.secondary-header,
-.primary-footer-container,
-.secondary-footer-container {
+.secondary-header {
     min-height: 440px;
 }
 
@@ -232,6 +229,10 @@ footer>div {
     width: 25%;
     min-height: 100%;
     display: inline-block;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .button-container {
@@ -287,4 +288,28 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     height: 50px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+}
+
+.flag {
+    height: 15px;
+}
+
+.cfoot {
+    color: rgb(121, 131, 245);
+    ;
+}
+
+h5 {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.abottom {
+    margin: 5px;
+    font-size: 15px;
 }
