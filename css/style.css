@@ -16,20 +16,50 @@ body {
     font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+header,
+footer {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 17px;
+}
+
+button {
+    font-size: 15px;
+}
+
+i {
+    margin-right: 10px;
+}
+
 /* Utility */
 
 .nav-box,
 .general-container,
 .button-container,
 .tertiary-footer-container {
-    min-width: 1080px;
+    width: 1080px;
 }
 
 .primary-container,
 .secondary-container,
 .download-container,
 .primary-footer-container,
-.jumbotron,
+/* .jumbotron, */
 .secondary-footer-container {
     border: var(--border2);
 }
@@ -40,14 +70,15 @@ body {
 .secondary-header,
 .primary-footer-container,
 .secondary-footer-container {
-    min-height: 400px;
+    min-height: 440px;
 }
 
 .contbkg,
 footer>div,
 .button-container,
 main,
-header {
+header,
+.jumbotron {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,9 +106,11 @@ header {
 }
 
 .jumbotron {
-    min-width: 800px;
-    min-height: 300px;
-    background-color: purple;
+    width: 800px;
+    height: 300px;
+    /* background-color: purple; */
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 /* Nav Header */
@@ -92,7 +125,7 @@ header {
 }
 
 .radius {
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .login {
@@ -111,6 +144,19 @@ a {
     font-size: 15px;
 }
 
+header>div>button {
+    width: 230px;
+    height: 40px;
+    margin: 15px;
+    padding: 5px 15px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+
 /* Container */
 
 main {
@@ -124,12 +170,12 @@ main {
 }
 
 .primary-container {
-    background-color: blue;
+    /* background-color: blue; */
     flex-basis: calc(100% / 3 * 2);
 }
 
 .secondary-container {
-    background-color: red;
+    /* background-color: red; */
     flex-basis: calc(100% / 3);
 }
 
@@ -146,6 +192,11 @@ main {
     background-color: green;
     flex-basis: 100%;
     min-height: 800px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Footer */
@@ -201,7 +252,7 @@ button {
 
 button {
     cursor: pointer;
-    width: 60px;
-    height: 25px;
+    min-width: 60px;
+    min-height: 25px;
     background-color: white;
 }
