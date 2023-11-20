@@ -12,6 +12,10 @@
     --border2: 2px dashed;
 }
 
+body {
+    font-family: 'Whitney', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 /* Utility */
 
 .nav-box,
@@ -52,19 +56,22 @@ header {
 /* Header */
 
 header {
-    background-color: rgb(173, 216, 230);
+    background-image: url(../img/jumbo.png);
     min-height: 50px;
 }
 
 .secondary-header {
-    background-color: green;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-box {
-    border: var(--border);
+    /* border: var(--border); */
     min-height: 30px;
     display: flex;
-    background-color: yellow;
+    /* background-color: yellow; */
+    align-items: center;
 }
 
 .jumbotron {
@@ -78,18 +85,30 @@ header {
 .logo,
 .link,
 .login {
-    border: var(--border);
+    /* border: var(--border); */
     min-height: 30px;
     display: inline-block;
+    width: 25%;
 }
 
-.logo,
+.radius {
+    border-radius: 10px;
+}
+
 .login {
-    width: 25%;
+    text-align: right;
 }
 
 .link {
     width: 50%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 18px;
+    font-size: 15px;
 }
 
 /* Container */
@@ -182,4 +201,7 @@ button {
 
 button {
     cursor: pointer;
+    width: 60px;
+    height: 25px;
+    background-color: white;
 }
