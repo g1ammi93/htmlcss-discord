@@ -72,8 +72,7 @@ a {
 }
 
 .primary-container,
-.secondary-container,
-.secondary-header {
+.secondary-container {
     min-height: 440px;
 }
 
@@ -112,6 +111,10 @@ header {
     height: 300px;
     text-align: center;
     flex-wrap: wrap;
+}
+
+.secondary-header {
+    min-height: 600px;
 }
 
 /* Nav Header */
@@ -157,7 +160,6 @@ header>div>button {
     color: white;
 }
 
-
 /* Container */
 
 main {
@@ -176,6 +178,7 @@ main {
 
 .secondary-container {
     flex-basis: calc(100% / 3);
+    padding-top: 40px;
 }
 
 .reverse {
@@ -195,6 +198,10 @@ main {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.pt-10 {
+    padding-top: 10px;
 }
 
 /* Footer */
